@@ -16,7 +16,7 @@ public class HandleUsrScissors : MonoBehaviour
     {
         move_to(-16f, 5f);
 
-        GameObject.Find("lose_stamp").SetActive(true);
+        //GameObject.Find("lose_stamp").SetActive(true);
         //HandleLoseStamp loseStamp = GameObject.Find("lose_stamp").GetComponent<HandleLoseStamp>();
         //loseStamp.display();
     }

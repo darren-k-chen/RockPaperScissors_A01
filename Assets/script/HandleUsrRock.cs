@@ -18,7 +18,7 @@ public class HandleUsrRock : MonoBehaviour
 
         //HandleLoseStamp loseStamp = GameObject.Find("lose_stamp").GetComponent<HandleLoseStamp>();
         //loseStamp.display();
-        GameObject.Find("lose_stamp").SetActive(true);
+        //GameObject.Find("lose_stamp").SetActive(true);
     }
     //public void show_or_hide(bool b)
     //{

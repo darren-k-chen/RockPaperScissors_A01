@@ -16,7 +16,7 @@ public class HandleRobotRock : MonoBehaviour
     {
         move_to(13.3f, 2f);
 
-        GameObject.Find("win_stamp").SetActive(true);
+        //GameObject.Find("win_stamp").SetActive(true);
         //HandleWinStamp winStamp = GameObject.Find("win_stamp").GetComponent<HandleWinStamp>();
         //winStamp.display();
     }

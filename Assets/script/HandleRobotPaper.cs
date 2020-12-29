@@ -16,7 +16,7 @@ public class HandleRobotPaper : MonoBehaviour
     {
         move_to(14.65f, -2.2f);
 
-        GameObject.Find("win_stamp").SetActive(true);
+        //GameObject.Find("win_stamp").SetActive(true);
         //HandleWinStamp winStamp = GameObject.Find("win_stamp").GetComponent<HandleWinStamp>();
         //winStamp.display();
     }

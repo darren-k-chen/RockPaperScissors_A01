@@ -24,31 +24,13 @@ public class HandleUsrScissors : MonoBehaviour
     {
         transform.position = new Vector3(x, y, z);
     }
-    public void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "Rock") hide();
-
-        //StartScript start = GameObject.Find("start").GetComponent<StartScript>();
-        //Thread.Sleep(5000);
-        //start.INIT();
-    }
+    public void OnCollisionEnter(Collision collision) { if (collision.gameObject.tag == "Rock") hide(); }
     public void onClick()
     {
         StartScript start = GameObject.Find("start").GetComponent<StartScript>();
         start.play_game();
     }
-    private void OnMouseDown()
-    {
-        onClick();
-    }
-
-    void Update()
-    {
-        // Update is called once per frame
-    }
-    void Start()
-    {
-        // Start is called before the first frame update
-        //onClick();
-    }
+    private void OnMouseDown() { onClick(); }
+    void Update() { }
+    void Start() { }
 }

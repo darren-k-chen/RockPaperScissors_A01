@@ -36,12 +36,6 @@ public class HandleRobotPaper : MonoBehaviour
         if (b) rigid.WakeUp();
         else rigid.Sleep();
     }
-    void Start()
-    {
-        // Start is called before the first frame update
-    }
-    void Update()
-    {
-        // Update is called once per frame
-    }
+    void Start() { }
+    void Update() { }
 }

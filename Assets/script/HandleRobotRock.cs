@@ -20,10 +20,7 @@ public class HandleRobotRock : MonoBehaviour
         //HandleWinStamp winStamp = GameObject.Find("win_stamp").GetComponent<HandleWinStamp>();
         //winStamp.display();
     }
-    public void move_to(float x = 0f, float y = 8f, float z = 0f)
-    {
-        transform.position = new Vector3(x, y, z);
-    }
+    public void move_to(float x = 0f, float y = 8f, float z = 0f) { transform.position = new Vector3(x, y, z); }
     public void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Paper") hide();
@@ -36,12 +33,6 @@ public class HandleRobotRock : MonoBehaviour
         if (b) rigid.WakeUp();
         else rigid.Sleep();
     }
-    void Start()
-    {
-        // Start is called before the first frame update
-    }
-    void Update()
-    {
-        // Update is called once per frame
-    }
+    void Start() { }
+    void Update() { }
 }

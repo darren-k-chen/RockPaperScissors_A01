@@ -20,10 +20,6 @@ public class HandleRobotScissors : MonoBehaviour
         //HandleWinStamp winStamp = GameObject.Find("win_stamp").GetComponent<HandleWinStamp>();
         //winStamp.display();
     }
-    //public void show_or_hide(bool b)
-    //{
-    //    this.gameObject.SetActive(b);
-    //}
     public void move_to(float x = 0f, float y = 8f, float z = 0f)
     {
         transform.position = new Vector3(x, y, z);
@@ -40,12 +36,6 @@ public class HandleRobotScissors : MonoBehaviour
         if (b) rigid.WakeUp();
         else rigid.Sleep();
     }
-    void Start()
-    {
-        // Start is called before the first frame update
-    }
-    void Update()
-    {
-        // Update is called once per frame
-    }
+    void Start() { }
+    void Update() { }
 }

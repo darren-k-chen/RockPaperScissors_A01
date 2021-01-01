@@ -6,6 +6,7 @@ using System.Net;
 using System.Threading;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.Networking;
 using UnityEngine.UI;
 
 public class StartScript : MonoBehaviour
@@ -41,12 +42,6 @@ public class StartScript : MonoBehaviour
 
         usrScissors.init(); usrRock.init(); usrPaper.init();
         robotScissors.init(); robotRock.init(); robotPaper.init();
-
-        HandleWinStamp winStamp = GameObject.Find("win_stamp").GetComponent<HandleWinStamp>();
-        HandleDrawStamp drawStamp = GameObject.Find("draw_stamp").GetComponent<HandleDrawStamp>();
-        HandleLoseStamp loseStamp = GameObject.Find("lose_stamp").GetComponent<HandleLoseStamp>();
-
-        winStamp.init(); drawStamp.init(); loseStamp.init();
     }
 
     public static int usr_score = 0, robot_score = 0;
@@ -55,7 +50,6 @@ public class StartScript : MonoBehaviour
         GameObject.Find("scoreboard").GetComponent<TextMesh>().text
             = "You " + usr_score + " : " + robot_score + " Kebbi";
     }
-
     public float getFistOdds(int cd_2, int cd_1, int cd_0)
     {
         string url = "https://bot01.darren-cv.site/rockPaperScissors/getOdds";
@@ -69,7 +63,6 @@ public class StartScript : MonoBehaviour
             print("[POST] " + json + "\n[TO] " + url);
             streamWriter.Write(json);
         }
-
         var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
         string result; using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
         {
@@ -81,16 +74,15 @@ public class StartScript : MonoBehaviour
     public List<int> usr_fist_history = new List<int>();
     public int getRobotFistCode()
     {
-        usr_fist_history = new List<int>();
+        //usr_fist_history = new List<int>();
         if (usr_fist_history.Count > 2)
         {
-            float[] fistOdds = { 
+            float[] fistOdds = {
                 getFistOdds(usr_fist_history[usr_fist_history.Count-1], usr_fist_history[usr_fist_history.Count-2], 1),
                 getFistOdds(usr_fist_history[usr_fist_history.Count-1], usr_fist_history[usr_fist_history.Count-2], 0),
                 getFistOdds(usr_fist_history[usr_fist_history.Count-1], usr_fist_history[usr_fist_history.Count-2], 2)
             }; return (fistOdds.ToList().IndexOf(fistOdds.Max()) + 1);
-        }
-        else return UnityEngine.Random.Range(1, 4);
+        } else return UnityEngine.Random.Range(1, 4);
     }
     public void play_game(string usr_fist = "Scissors")
     {

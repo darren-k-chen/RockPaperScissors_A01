@@ -63,8 +63,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\script\HandleDrawStamp.cs" />
-    <Compile Include="Assets\script\HandleLoseStamp.cs" />
     <Compile Include="Assets\script\HandleRestartIcon.cs" />
     <Compile Include="Assets\script\HandleRobotPaper.cs" />
     <Compile Include="Assets\script\HandleRobotRock.cs" />
@@ -72,7 +70,6 @@
     <Compile Include="Assets\script\HandleUsrPaper.cs" />
     <Compile Include="Assets\script\HandleUsrRock.cs" />
     <Compile Include="Assets\script\HandleUsrScissors.cs" />
-    <Compile Include="Assets\script\HandleWinStamp.cs" />
     <Compile Include="Assets\script\StartScript.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.17f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>

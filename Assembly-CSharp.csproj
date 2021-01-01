@@ -63,6 +63,27 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleAudio.cs" />
+    <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModulePhysics.cs" />
+    <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModulePhysics2D.cs" />
+    <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleSprite.cs" />
+    <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUI.cs" />
+    <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
+    <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUtils.cs" />
+    <Compile Include="Assets\MiboUnity\Script\FaceDetectMain.cs" />
+    <Compile Include="Assets\MiboUnity\Script\FaceDeteh.cs" />
+    <Compile Include="Assets\MiboUnity\Script\FaceTrackSystem.cs" />
+    <Compile Include="Assets\MiboUnity\Script\LedMain.cs" />
+    <Compile Include="Assets\MiboUnity\Script\LocalCommandCallback.cs" />
+    <Compile Include="Assets\MiboUnity\Script\LocalCommandRecognition.cs" />
+    <Compile Include="Assets\MiboUnity\Script\MotionPlayMain.cs" />
+    <Compile Include="Assets\MiboUnity\Script\MotorMain.cs" />
+    <Compile Include="Assets\MiboUnity\Script\MovementMain.cs" />
+    <Compile Include="Assets\MiboUnity\Script\RecognizeMain.cs" />
+    <Compile Include="Assets\MiboUnity\Script\SpeechToTextMain.cs" />
+    <Compile Include="Assets\MiboUnity\Script\TTsPlayMain.cs" />
+    <Compile Include="Assets\MiboUnity\Script\TitleMain.cs" />
+    <Compile Include="Assets\MiboUnity\Script\TouchMain.cs" />
     <Compile Include="Assets\script\HandleRestartIcon.cs" />
     <Compile Include="Assets\script\HandleRobotPaper.cs" />
     <Compile Include="Assets\script\HandleRobotRock.cs" />
@@ -71,6 +92,7 @@
     <Compile Include="Assets\script\HandleUsrRock.cs" />
     <Compile Include="Assets\script\HandleUsrScissors.cs" />
     <Compile Include="Assets\script\StartScript.cs" />
+    <None Include="Assets\Demigiant\DOTween\readme.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.17f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -250,6 +272,9 @@
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>D:/kjchen/Projects/Unity/RockPaperScissors_A01/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>D:/kjchen/Projects/Unity/RockPaperScissors_A01/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.17f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -678,7 +703,12 @@
       <HintPath>D:/kjchen/Projects/Unity/RockPaperScissors_A01/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <ItemGroup></ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{C60D4F85-86F6-BF5F-D418-9DEA9F4126EA}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

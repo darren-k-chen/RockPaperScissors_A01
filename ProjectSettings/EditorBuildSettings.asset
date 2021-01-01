@@ -4,5 +4,44 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 0
+    path: Assets/MiboUnity/Scene/Demo_Title.unity
+    guid: dbf032f2957b72c4695a60ee3c218a5c
+  - enabled: 0
+    path: Assets/MiboUnity/Scene/Demo_FaceDetect.unity
+    guid: be9a6b876d65b3044ae55d9d767b3261
+  - enabled: 0
+    path: Assets/MiboUnity/Scene/Demo_Facetrack.unity
+    guid: 4e8ef9c7660b9bd42912549c9501c784
+  - enabled: 0
+    path: Assets/MiboUnity/Scene/Demo_LED.unity
+    guid: f8c63441204f71c40acc33f24094878b
+  - enabled: 0
+    path: Assets/MiboUnity/Scene/Demo_LocalCommand.unity
+    guid: 60d1424f4a3e42d49b682df4a931e3dd
+  - enabled: 0
+    path: Assets/MiboUnity/Scene/Demo_motion_play.unity
+    guid: 2f0c4a84ed7fc4b4baa5a1f297f7c32a
+  - enabled: 0
+    path: Assets/MiboUnity/Scene/Demo_Motor.unity
+    guid: 2386ae2fefcf7824a9d302ad0eae2336
+  - enabled: 0
+    path: Assets/MiboUnity/Scene/Demo_movement.unity
+    guid: cc95ea1c868a8b84fa6aeed7c71ae8c9
+  - enabled: 0
+    path: Assets/MiboUnity/Scene/Demo_Recognize.unity
+    guid: 46cacdb8cfcc84a439ec14c0f8e6aea8
+  - enabled: 0
+    path: Assets/MiboUnity/Scene/Demo_Speed2Text.unity
+    guid: d4b61dc8673cd004787aa600effcab4f
+  - enabled: 0
+    path: Assets/MiboUnity/Scene/Demo_touch.unity
+    guid: 1f2059aeeb039d64ea5459f8ae7d82a0
+  - enabled: 0
+    path: Assets/MiboUnity/Scene/Demo_tts.unity
+    guid: 290d92bb8e3fdf14d97f9e0bda5dcc5d
   m_configObjects: {}

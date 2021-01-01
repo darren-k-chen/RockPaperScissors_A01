@@ -53,31 +53,31 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11486}
+      Script: {instanceID: 11488}
     - Class: 114
-      Script: {instanceID: 11784}
+      Script: {instanceID: 11786}
     - Class: 114
-      Script: {instanceID: 11948}
+      Script: {instanceID: 11950}
     - Class: 114
-      Script: {instanceID: 12006}
+      Script: {instanceID: 12008}
     - Class: 114
-      Script: {instanceID: 12282}
+      Script: {instanceID: 12284}
     - Class: 114
-      Script: {instanceID: 12484}
+      Script: {instanceID: 12486}
     - Class: 114
-      Script: {instanceID: 12668}
-    - Class: 114
-      Script: {instanceID: 12804}
+      Script: {instanceID: 12670}
     - Class: 114
       Script: {instanceID: 13960}
     - Class: 114
       Script: {instanceID: 14236}
     - Class: 114
-      Script: {instanceID: 14248}
+      Script: {instanceID: 14368}
     - Class: 114
-      Script: {instanceID: 14370}
+      Script: {instanceID: 14794}
     - Class: 114
-      Script: {instanceID: 14400}
+      Script: {instanceID: 14800}
+    - Class: 114
+      Script: {instanceID: 14804}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -619,7 +619,109 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 704dcd31abc789439bc3f3cd10b58c2b
+    assemblyName: DOTween.dll
+    namespaceName: DG.Tweening.Core
+    className: DOTweenComponent
+  - hash:
+      serializedVersion: 2
+      Hash: 49cbb3369dc9b7b81a56e2f87e67a737
+    assemblyName: DOTween.dll
+    namespaceName: DG.Tweening.Core
+    className: DOTweenSettings
+  - hash:
+      serializedVersion: 2
+      Hash: 2d0389e7437edc42bd1d1df3d66c0f9c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RecognizeMain
+  - hash:
+      serializedVersion: 2
+      Hash: ee031c6bc378ea392da8842cc3317aea
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TitleMain
+  - hash:
+      serializedVersion: 2
+      Hash: 757c3eaa6510b537693b1fb3baea024c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FaceDetectMain
+  - hash:
+      serializedVersion: 2
+      Hash: 899443208db49edacb6bfd557bced3b6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LedMain
+  - hash:
+      serializedVersion: 2
+      Hash: 7855f73799f24d54aad98c7139c17a43
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LocalCommandRecognition
+  - hash:
+      serializedVersion: 2
+      Hash: ed1c850c53a07abec0068c4c990f1ced
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TTsPlayMain
+  - hash:
+      serializedVersion: 2
+      Hash: 74ba9883c3a1bf5d64cfdc720a978181
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FaceDeteh
+  - hash:
+      serializedVersion: 2
+      Hash: 2c74e5a8d428e54feddf6cebe192b129
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MovementMain
+  - hash:
+      serializedVersion: 2
+      Hash: 739c120bbef7c5a6dc5bef5773d1df64
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MotorMain
+  - hash:
+      serializedVersion: 2
+      Hash: 0481f6512f3649155403c6c0ca7ed7d5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MotionPlayMain
+  - hash:
+      serializedVersion: 2
+      Hash: 757c3eaa6510b537693b1fb3baea024c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TouchMain
+  - hash:
+      serializedVersion: 2
+      Hash: dc64a99195855d051e3fc2d2fd7343f4
+    assemblyName: Assembly-CSharp-firstpass.dll
+    namespaceName: 
+    className: MiboEventTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: a260b56da7ef2d4fa964aeeea4394b12
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FaceTrackSystem
+  - hash:
+      serializedVersion: 2
+      Hash: ac671dd9d6a51d77b6a5480ce54919ef
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SpeechToTextMain
+  - hash:
+      serializedVersion: 2
+      Hash: 452d564aa5475cf9697fcc8b9e729bec
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LocalCommandCallback
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: "C:/Users/09503/Desktop/\u526A\u5200\u77F3\u982D\u5E03.apk"
+  playerPath: C:/Users/09503/Desktop/APK_DIR/Rock_Paper_Scissors_kebbi.apk

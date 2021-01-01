@@ -141,7 +141,6 @@ public class StartScript : MonoBehaviour
 
         int tmp = usr_fist_code - robot_fist_code;
 
-        //HandleDrawStamp drawStamp = GameObject.Find("draw_stamp").GetComponent<HandleDrawStamp>();
         if (tmp == 1 || tmp == -2) { usr_score++; updateScoreBoard(); Mibo.startTTS("恭喜你贏了，耶"); Mibo.motionPlay("666_SP_HorizontalBar"); }
         else if (tmp == 0) Mibo.startTTS("平手，看來我們不相上下呢"); // DRAW
         else { robot_score++; updateScoreBoard(); Mibo.startTTS("唉呀，你輸了，加把勁"); Mibo.motionPlay("666_PE_Phubbing"); }

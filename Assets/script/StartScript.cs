@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -57,14 +58,14 @@ public class StartScript : MonoBehaviour
         using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
         {
             string json = "{\"fist\":[" + cd_2 + "," + cd_1 + "," + cd_0 + "]}";
-            print("[POST] " + json + "\n[TO] " + url);
+            //print("[POST] " + json + "\n[TO] " + url);
             streamWriter.Write(json);
         }
         var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
         string result; using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
         {
             result = streamReader.ReadToEnd();
-            print("[RESULT] " + result);
+            //print("[RESULT] " + result);
             return float.Parse(result);
         }
     }
@@ -72,13 +73,15 @@ public class StartScript : MonoBehaviour
     public int getRobotFistCode()
     {
         //usr_fist_history = new List<int>();
-        if (usr_fist_history.Count > 2)
+        if (usr_fist_history.Count > 2 && usr_fist_history[usr_fist_history.Count - 1] == usr_fist_history[usr_fist_history.Count - 2])
         {
-            float[] fistOdds = {
-                getFistOdds(usr_fist_history[usr_fist_history.Count-1], usr_fist_history[usr_fist_history.Count-2], 1),
-                getFistOdds(usr_fist_history[usr_fist_history.Count-1], usr_fist_history[usr_fist_history.Count-2], 0),
-                getFistOdds(usr_fist_history[usr_fist_history.Count-1], usr_fist_history[usr_fist_history.Count-2], 2)
-            }; return (fistOdds.ToList().IndexOf(fistOdds.Max()) + 1);
+            //float[] fistOdds = {
+            //    getFistOdds(usr_fist_history[usr_fist_history.Count-1], usr_fist_history[usr_fist_history.Count-2], 1),
+            //    getFistOdds(usr_fist_history[usr_fist_history.Count-1], usr_fist_history[usr_fist_history.Count-2], 0),
+            //    getFistOdds(usr_fist_history[usr_fist_history.Count-1], usr_fist_history[usr_fist_history.Count-2], 2)
+            //}; return (fistOdds.ToList().IndexOf(fistOdds.Max()) + 1);
+
+            return Math.Abs(usr_fist_history[usr_fist_history.Count - 1] - 3);
         } else return UnityEngine.Random.Range(1, 4);
     }
     public void play_game(string usr_fist = "Scissors")
@@ -123,7 +126,8 @@ public class StartScript : MonoBehaviour
                 robotScissors.move_to();
                 robotScissors.setRigidbodyWakeUp(true);
                 break;
-            case 2:
+            case  2:
+            case -1:
                 robotRock.move_to();
                 robotRock.setRigidbodyWakeUp(true);
                 break;

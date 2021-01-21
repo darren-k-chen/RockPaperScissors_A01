@@ -724,4 +724,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/09503/Desktop/APK_DIR/Rock_Paper_Scissors_kebbi.apk
+  playerPath: C:/Users/09503/Desktop/ApkDIR/FOR_KEBBI_RockPaperScissors.apk
